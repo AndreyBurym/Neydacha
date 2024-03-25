@@ -1,0 +1,150 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.header__logo {
+    width: 150px;
+    height: auto;
+}
+
+.header__nav {
+    float: right;
+}
+
+.header__menu {
+    list-style: none;
+}
+
+.header__menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header__menu li:first-child {
+    margin-left: 0;
+}
+
+.header__menu li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header__menu li a:hover {
+    color: #007bff;
+}
+
+.main {
+    padding: 50px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.slider-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.slider-container {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+}
+
+.slider-slide {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.prev-slide,
+.next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.prev-slide:hover,
+.next-slide:hover {
+    background-color: #0056b3;
+}
+
+.prev-slide {
+    left: 10px;
+}
+
+.next-slide {
+    right: 10px;
+}
+.btn-primary{
+    
+    color: #000;
+}
+.slider__slide {
+    border: 1px solid #000;
+    width: 100%;
+    display: none;
+    opacity: 0;
+    /* Initially set opacity to 0 */
+    position: absolute;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease;
+    /* Adjusted transition for smooth movement and opacity */
+}
+
+.slider__slide.active-slide {
+    background-color: greenyellow;
+    display: block;
+    opacity: 1;
+    /* Make slide fully visible */
+    transform: translateX(0);
+    /* Set initial position */
+}
+
+.slider__slide.next-slide {
+    transform: translateX(100%);
+    /* Move next slide off to the right */
+    opacity: 0;
+    /* Make next slide fully transparent */
+}
+
+.slider__slide.prev-slide {
+    transform: translateX(-100%);
+    /* Move previous slide off to the left */
+    opacity: 0;
+    /* Make previous slide fully transparent */
+}

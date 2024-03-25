@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Website</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="header">
+<div class="container">
+  <img src="logo.png" alt="LOGO" class="header__logo">
+  <nav class="header__nav">
+    <ul class="header__menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+</header>
+<main class="main">
+<div class="container">
+  <section class="content" id="home">
+    <h1>Welcome to Our Website</h1>
+    <p>We provide innovative solutions for your business needs.</p>
+    <a href="#services" class="btn btn-primary">Explore Services</a>
+  </section>
+  <section class="content" id="about">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida nulla a libero condimentum aliquam.</p>
+  </section>
+  <!-- Add more sections as needed -->
+</div>
+</main>
+    <section class="slider-section">
+  <div class="container">
+    <div class="slider">
+    <div class="slider__slide active-slide" id="slide1">
+    <div class="slider__slide-body">
+    <h1 onclick="goToSlide(1)" class="icon__1" id="paralax">H1</h1>
+    </div>
+    </div>
+    <div class="slider__slide" id="slide2">
+    <div class="slider__slide-body">
+    <h1 onclick="goToSlide(2)" class="icon__2" id="paralax">H2</h1>
+    </div>
+    </div>
+    <div class="slider__slide" id="slide3">
+    <div class="slider__slide-body">
+    <h1 onclick="goToSlide(3)" class="icon__3" id="paralax">H3</h1>
+    </div>
+    </div>
+    <div class="slider__slide" id="slide4">
+    <div class="slider__slide-body">
+    <h1 onclick="goToSlide(4)" class="icon__4" id="paralax">H4</h1>
+    </div>
+    </div>
+    </div>
+    <div class="slider__dots">
+    <ul>
+    <li onclick="goToSlide(1)">1</li>
+    <li onclick="goToSlide(2)">2</li>
+    <li onclick="goToSlide(3)">3</li>
+    <li onclick="goToSlide(4)">4</li>
+    </ul>
+    </div>
+    </div>
+    </section>
+<footer class="footer">
+<div class="container">
+  <p>&copy; 2024 Your Company</p>
+</div>
+</footer>
+
+<script src="./slider.js"></script>
+</body>
+</html>
